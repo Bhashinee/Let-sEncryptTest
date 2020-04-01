@@ -7,7 +7,7 @@ http:ListenerConfiguration config = {
     }
 };
 
-service hello on new http:Listener(9095) {
+service hello on new http:Listener(443) {
     resource function hi(http:Caller caller, http:Request request) {
         var response = caller->respond("hello");
     }
